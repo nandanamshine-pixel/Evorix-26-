@@ -16,7 +16,11 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { events, registrationUrl } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-type Event = Omit<(typeof events)[number], "rules"> & { rules?: string[] };
+type Event = (typeof events)[number] & {
+  eligibility?: string;
+  prize?: string;
+  rules?: string[];
+};
 
 const bannerStyles: Record<string, string> = {
   radial:
@@ -87,7 +91,7 @@ export function EventCard({ event }: { event: Event }) {
           <div className="flex items-center gap-2">
             <Users className="size-4 text-cyan-200" />
             <dt className="sr-only">Eligibility</dt>
-            <dd>{event.eligibility} - {event.teamSize}</dd>
+            <dd>{[event.eligibility, event.teamSize].filter(Boolean).join(" • ")}</dd>
           </div>
           <div className="flex items-center gap-2">
             <MapPin className="size-4 text-cyan-200" />
@@ -120,7 +124,7 @@ export function EventCard({ event }: { event: Event }) {
         <section className="mt-auto pt-5">
           <div className="flex items-center gap-2 text-sm font-semibold text-purple-100">
             <Trophy className="size-4" />
-            {event.prize}
+            {event.prize ?? "Prize details to be announced"}
           </div>
           <Button asChild className="mt-5 w-full" size="sm">
             <a href={registrationUrl} target="_blank" rel="noreferrer">
