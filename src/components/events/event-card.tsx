@@ -16,8 +16,17 @@ import { GlassCard } from "@/components/ui/glass-card";
 import { events, registrationUrl } from "@/data/site";
 import { cn } from "@/lib/utils";
 
-type Event = (typeof events)[number] & {
+type Event = {
+  title: string;
+  category: string;
+  description: string;
   eligibility?: string;
+  teamSize?: string;
+  venue: string;
+  date: string;
+  time: string;
+  icon: (typeof events)[number]["icon"];
+  banner: string;
   prize?: string;
   rules?: string[];
 };

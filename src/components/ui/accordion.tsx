@@ -1,6 +1,17 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import {
+  CheckCircle2,
+  ChevronDown,
+  CircleDollarSign,
+  MapPin,
+  Phone,
+  School,
+  ShieldCheck,
+  Trophy,
+  Utensils,
+  Users,
+} from "lucide-react";
 import type * as React from "react";
 import { useState } from "react";
 
@@ -10,7 +21,19 @@ import { cn } from "@/lib/utils";
 type AccordionItem = {
   question: string;
   answer: string;
-  icon?: React.ComponentType<{ className?: string }>;
+  icon?: string;
+};
+
+const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
+  School,
+  Users,
+  CircleDollarSign,
+  Utensils,
+  Trophy,
+  CheckCircle2,
+  MapPin,
+  Phone,
+  ShieldCheck,
 };
 
 export function Accordion({ items }: { items: AccordionItem[] }) {
@@ -19,7 +42,7 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
   return (
     <div className="grid gap-4">
       {items.map((item, index) => {
-        const Icon = item.icon;
+        const Icon = item.icon ? iconMap[item.icon] : null;
         const isOpen = openIndex === index;
 
         return (

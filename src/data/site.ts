@@ -147,21 +147,21 @@ export const galleryItems = [
 ];
 
 export const faqCategories = [
-  { question: "How will schools register for EVORIX?", answer: "A school coordinator should complete the official EVORIX Google Form. Individual student entries should be routed through the school.", icon: School },
-  { question: "Can students register independently?", answer: "No. Participation is school-nominated to keep verification, attendance, and permissions organized.", icon: Users },
-  { question: "Is there a registration fee?", answer: "Any participation fee, if applicable, will be published with the official circular before registrations open.", icon: CircleDollarSign },
-  { question: "Will food be provided?", answer: "Basic refreshments are planned for participants and coordinators. Detailed food arrangements will be shared with the final schedule.", icon: Utensils },
-  { question: "Are certificates provided?", answer: "Participation certificates and winner certificates are planned for verified participants across eligible events.", icon: Trophy },
-  { question: "Can one student join multiple events?", answer: "Yes, where timings do not clash. Schools should check the schedule before final team submission.", icon: CheckCircle2 },
-  { question: "Will accommodation be available?", answer: "EVORIX is currently planned as a day-school event. Accommodation support is not included in this phase.", icon: MapPin },
-  { question: "What should participants carry?", answer: "Students should carry school ID cards, approved materials for their events, water bottles, and any consent forms required by their school.", icon: ShieldCheck },
-  { question: "Are mobile phones allowed?", answer: "Phones may be restricted inside specific competition venues. Event coordinators will announce rules before each round.", icon: Phone },
-  { question: "How are disputes handled?", answer: "Each venue will have event coordinators and judges. Appeals must be routed through the school coordinator.", icon: ShieldCheck },
-  { question: "Can parents attend?", answer: "Parent access depends on school policy and venue capacity. Visitor guidelines will be announced closer to the fest.", icon: Users },
-  { question: "Where can rules be downloaded?", answer: "Rules will be available on each event page in a later phase, with downloadable PDFs planned before launch.", icon: CheckCircle2 },
-  { question: "Will there be emergency support?", answer: "Yes. A help desk and first-aid contact point will be visible on campus during fest hours.", icon: Phone },
-  { question: "Can schools bring banners?", answer: "School identity material may be allowed in designated areas, subject to decorum and campus rules.", icon: School },
-  { question: "How will winners be announced?", answer: "Results will be announced during the valedictory ceremony and later published through official school channels.", icon: Trophy },
+  { question: "How will schools register for EVORIX?", answer: "A school coordinator should complete the official EVORIX Google Form. Individual student entries should be routed through the school.", icon: "School" },
+  { question: "Can students register independently?", answer: "No. Participation is school-nominated to keep verification, attendance, and permissions organized.", icon: "Users" },
+  { question: "Is there a registration fee?", answer: "Any participation fee, if applicable, will be published with the official circular before registrations open.", icon: "CircleDollarSign" },
+  { question: "Will food be provided?", answer: "Basic refreshments are planned for participants and coordinators. Detailed food arrangements will be shared with the final schedule.", icon: "Utensils" },
+  { question: "Are certificates provided?", answer: "Participation certificates and winner certificates are planned for verified participants across eligible events.", icon: "Trophy" },
+  { question: "Can one student join multiple events?", answer: "Yes, where timings do not clash. Schools should check the schedule before final team submission.", icon: "CheckCircle2" },
+  { question: "Will accommodation be available?", answer: "EVORIX is currently planned as a day-school event. Accommodation support is not included in this phase.", icon: "MapPin" },
+  { question: "What should participants carry?", answer: "Students should carry school ID cards, approved materials for their events, water bottles, and any consent forms required by their school.", icon: "ShieldCheck" },
+  { question: "Are mobile phones allowed?", answer: "Phones may be restricted inside specific competition venues. Event coordinators will announce rules before each round.", icon: "Phone" },
+  { question: "How are disputes handled?", answer: "Each venue will have event coordinators and judges. Appeals must be routed through the school coordinator.", icon: "ShieldCheck" },
+  { question: "Can parents attend?", answer: "Parent access depends on school policy and venue capacity. Visitor guidelines will be announced closer to the fest.", icon: "Users" },
+  { question: "Where can rules be downloaded?", answer: "Rules will be available on each event page in a later phase, with downloadable PDFs planned before launch.", icon: "CheckCircle2" },
+  { question: "Will there be emergency support?", answer: "Yes. A help desk and first-aid contact point will be visible on campus during fest hours.", icon: "Phone" },
+  { question: "Can schools bring banners?", answer: "School identity material may be allowed in designated areas, subject to decorum and campus rules.", icon: "School" },
+  { question: "How will winners be announced?", answer: "Results will be announced during the valedictory ceremony and later published through official school channels.", icon: "Trophy" },
 ];
 
 export const coordinators = {
