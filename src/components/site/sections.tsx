@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { ArrowRight, Clock3, Send } from "lucide-react";
 
 import { Container } from "@/components/layout/container";
@@ -19,10 +20,44 @@ const sectionMotion = {
   initial: "hidden",
   whileInView: "visible",
   viewport: { once: true, amount: 0.2 },
-  
 };
 
+const countdownTarget = new Date("2026-08-06T00:00:00");
+
+function getTimeLeft(targetDate: Date) {
+  const diff = targetDate.getTime() - Date.now();
+
+  if (diff <= 0) {
+    return { days: 0, hours: 0, minutes: 0, seconds: 0 };
+  }
+
+  const totalSeconds = Math.floor(diff / 1000);
+  const days = Math.floor(totalSeconds / 86400);
+  const hours = Math.floor((totalSeconds % 86400) / 3600);
+  const minutes = Math.floor((totalSeconds % 3600) / 60);
+  const seconds = totalSeconds % 60;
+
+  return { days, hours, minutes, seconds };
+}
+
 export function LandingSections() {
+  const [timeLeft, setTimeLeft] = useState(() => getTimeLeft(countdownTarget));
+
+  useEffect(() => {
+    const timer = window.setInterval(() => {
+      setTimeLeft(getTimeLeft(countdownTarget));
+    }, 1000);
+
+    return () => window.clearInterval(timer);
+  }, []);
+
+  const countdownValues = [
+    { value: String(timeLeft.days).padStart(2, "0"), label: "days" },
+    { value: String(timeLeft.hours).padStart(2, "0"), label: "hours" },
+    { value: String(timeLeft.minutes).padStart(2, "0"), label: "minutes" },
+    { value: String(timeLeft.seconds).padStart(2, "0"), label: "seconds" },
+  ];
+
   return (
     <>
       <MotionSection id="about" className="py-24" {...sectionMotion} variants={fadeUp}>
@@ -66,12 +101,7 @@ export function LandingSections() {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4 sm:grid-cols-4">
-                {[
-                  ["00", "days"],
-                  ["00", "hours"],
-                  ["00", "minutes"],
-                  ["00", "seconds"],
-                ].map(([value, label]) => (
+                {countdownValues.map(({ value, label }) => (
                   <div
                     key={label}
                     className="rounded-lg border border-white/10 bg-slate-950/55 p-5 text-center"
