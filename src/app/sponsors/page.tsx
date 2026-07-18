@@ -9,8 +9,8 @@ export default function SponsorsPage() {
     <main id="main-content">
       <PageHeader
         eyebrow="Sponsors"
-        title="Premium partner spaces for a student-first festival."
-        description="EVORIX sponsor sections are ready for approved partners across education, technology, media, hospitality, and community support."
+        title="The Sponsor space for EVORIX"
+        description="EVORIX sponsor sections"
       />
       <section className="py-16 pb-24">
         <Container className="grid gap-10">
