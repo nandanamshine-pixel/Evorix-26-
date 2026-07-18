@@ -153,8 +153,8 @@ export function LandingSections() {
         <Container>
           <SectionHeading
             eyebrow="Sponsors"
-            title="Partner spaces ready for the EVORIX ecosystem."
-            description="Sponsor blocks are prepared for school-approved partners who want to support student excellence, innovation, and interschool collaboration."
+            title="Partner spaces for EVORIX sponsors."
+            description="The EVORIX team is grateful for the support of our sponsors, whose contributions help make this interschool festival possible."
           />
           <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {sponsors.map((sponsor) => (
