@@ -7,8 +7,8 @@ export default function SchedulePage() {
     <main id="main-content">
       <PageHeader
         eyebrow="Schedule"
-        title="A two-day timeline designed for fast scanning."
-        description="Filter the placeholder schedule by venue or category. The layout is ready for official reporting times, venue updates, and event-specific instructions."
+        title="Schedule for EVORIX 2026"
+        description="Checkout the schedule for EVORIX 2026 below. Updates on exact time, order, and location shall be updated soon. Please check back for updates :)."
       />
       <section className="py-16 pb-24">
         <Container>
