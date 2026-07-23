@@ -18,13 +18,10 @@ export default function PayPage() {
           </div>
 
           <div className="mx-auto w-full max-w-xl overflow-hidden rounded-[2rem] bg-white p-6 shadow-[0_24px_80px_rgba(15,23,42,0.18)]">
-            <Image
+            <img
               src="/gpay-qr.svg"
               alt="Google Pay QR code"
-              width={920}
-              height={920}
               className="mx-auto max-w-full rounded-[1.5rem]"
-              priority
             />
           </div>
 

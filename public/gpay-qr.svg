@@ -3,33 +3,42 @@
   <rect x="120" y="120" width="960" height="960" rx="80" fill="#ffffff" stroke="#d1d5db" stroke-width="2" />
 
   <g fill="#000">
-    <rect x="180" y="180" width="250" height="250" rx="44" />
-    <rect x="180" y="720" width="250" height="250" rx="44" />
-    <rect x="770" y="180" width="250" height="250" rx="44" />
-    <rect x="770" y="720" width="250" height="250" rx="44" />
-
-    <rect x="435" y="435" width="70" height="70" rx="14" />
-    <rect x="525" y="435" width="70" height="70" rx="14" />
-    <rect x="615" y="435" width="70" height="70" rx="14" />
-    <rect x="435" y="525" width="70" height="70" rx="14" />
-    <rect x="615" y="525" width="70" height="70" rx="14" />
-    <rect x="435" y="615" width="70" height="70" rx="14" />
-    <rect x="525" y="615" width="70" height="70" rx="14" />
-    <rect x="615" y="615" width="70" height="70" rx="14" />
-
-    <rect x="520" y="245" width="120" height="120" rx="24" />
-    <rect x="520" y="835" width="120" height="120" rx="24" />
-    <rect x="245" y="520" width="120" height="120" rx="24" />
-    <rect x="835" y="520" width="120" height="120" rx="24" />
+    <rect x="180" y="180" width="260" height="260" rx="52" />
+    <rect x="180" y="720" width="260" height="260" rx="52" />
+    <rect x="760" y="180" width="260" height="260" rx="52" />
   </g>
 
-  <rect x="320" y="320" width="560" height="560" rx="80" fill="#ffffff" />
-  <g transform="translate(500 420)">
-    <circle cx="100" cy="100" r="90" fill="#0f172a" />
+  <rect x="360" y="360" width="480" height="480" rx="80" fill="#000" />
+  <rect x="440" y="440" width="320" height="320" rx="56" fill="#ffffff" />
+
+  <g fill="#000">
+    <rect x="440" y="440" width="72" height="72" rx="20" />
+    <rect x="532" y="440" width="72" height="72" rx="20" />
+    <rect x="624" y="440" width="72" height="72" rx="20" />
+    <rect x="440" y="532" width="72" height="72" rx="20" />
+    <rect x="624" y="532" width="72" height="72" rx="20" />
+    <rect x="440" y="624" width="72" height="72" rx="20" />
+    <rect x="532" y="624" width="72" height="72" rx="20" />
+    <rect x="624" y="624" width="72" height="72" rx="20" />
+  </g>
+
+  <g fill="#000">
+    <rect x="340" y="520" width="60" height="60" rx="16" />
+    <rect x="260" y="520" width="60" height="60" rx="16" />
+    <rect x="760" y="520" width="60" height="60" rx="16" />
+    <rect x="840" y="520" width="60" height="60" rx="16" />
+    <rect x="520" y="340" width="60" height="60" rx="16" />
+    <rect x="520" y="260" width="60" height="60" rx="16" />
+    <rect x="520" y="760" width="60" height="60" rx="16" />
+    <rect x="520" y="840" width="60" height="60" rx="16" />
+  </g>
+
+  <g transform="translate(520 420)">
+    <circle cx="80" cy="80" r="80" fill="#0f172a" />
     <path d="M82 30 C102 10, 136 6, 160 26 C182 44, 188 78, 165 98 C140 122, 102 146, 82 118 C64 94, 64 60, 82 30 Z" fill="#34a853" />
     <path d="M90 16 C76 42, 100 62, 128 50 C154 40, 168 18, 148 10 C128 2, 106 8, 90 16 Z" fill="#4285f4" />
     <path d="M80 136 C108 130, 130 96, 108 74 C86 52, 52 64, 56 94 C60 122, 70 140, 80 136 Z" fill="#fbbc05" />
-    <circle cx="100" cy="100" r="18" fill="#ffffff" />
+    <circle cx="85" cy="85" r="18" fill="#ffffff" />
   </g>
 
   <rect x="220" y="960" width="760" height="120" rx="60" fill="#111827" />
