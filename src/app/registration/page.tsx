@@ -89,6 +89,9 @@ export default function RegistrationPage() {
                 Register Now <ArrowRight className="size-5" />
               </a>
             </Button>
+            <Button asChild size="lg" variant="secondary" className="mt-3">
+              <a href="/pay">Pay Now</a>
+            </Button>
           </GlassCard>
         </Container>
       </section>
