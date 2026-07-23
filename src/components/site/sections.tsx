@@ -140,29 +140,16 @@ export function LandingSections() {
                 </span>
               </div>
             </div>
+          <div className="grid gap-3">
             <Button asChild size="lg" className="w-full md:w-auto">
               <a href={registrationUrl} target="_blank" rel="noreferrer">
                 Register Now <ArrowRight className="size-5" />
               </a>
             </Button>
-          </GlassCard>
-        </Container>
-      </MotionSection>
-
-      <MotionSection id="sponsors" className="py-24" {...sectionMotion} variants={fadeUp}>
-        <Container>
-          <SectionHeading
-            eyebrow="Sponsors"
-            title="Partner spaces for EVORIX sponsors."
-            description="The EVORIX team is grateful for the support of our sponsors, whose contributions help make this interschool festival possible."
-          />
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-            {sponsors.map((sponsor) => (
-              <div
-                key={sponsor}
-                className="grid h-32 place-items-center rounded-lg border border-white/10 bg-white/[0.045] text-center text-sm font-semibold uppercase tracking-[0.18em] text-slate-300 backdrop-blur-xl"
-              >
-                {sponsor}
+            <Button asChild size="lg" variant="secondary" className="w-full md:w-auto">
+              <a href="/pay">Pay Now</a>
+            </Button>
+          </div>
               </div>
             ))}
           </div>
