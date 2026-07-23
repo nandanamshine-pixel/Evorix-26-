@@ -57,6 +57,9 @@ export function Hero() {
               </a>
             </Button>
             <Button asChild size="lg" variant="secondary">
+              <a href="/pay">Pay Now</a>
+            </Button>
+            <Button asChild size="lg" variant="secondary">
               <a href="/events">Explore Events</a>
             </Button>
           </div>
