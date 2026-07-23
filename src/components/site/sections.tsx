@@ -150,11 +150,9 @@ export function LandingSections() {
               <a href="/pay">Pay Now</a>
             </Button>
           </div>
-              </div>
-            ))}
-          </div>
-        </Container>
-      </MotionSection>
+        </GlassCard>
+      </Container>
+    </MotionSection>
 
       <MotionSection id="faq" className="py-24" {...sectionMotion} variants={fadeUp}>
         <Container>
