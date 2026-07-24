@@ -133,7 +133,7 @@ export function LandingSections() {
                   Eligibility: Participants from invited schools
                 </span>
                 <span className="rounded-md border border-white/10 bg-slate-950/45 px-4 py-3">
-                  Deadline: 6th August
+                  Deadline: 3rd August
                 </span>
                 <span className="rounded-md border border-white/10 bg-slate-950/45 px-4 py-3">
                   Queries: evorixcarmel@gmail.com
